@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Resep Makanan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resep Makanan</h1>
+        <div id="search-container">
+            <input type="text" id="searchInput" placeholder="Cari resep..." />
+        </div>
+        <div id="recipe-list" class="recipe-list">
+            <!-- Resep makanan akan ditambahkan di sini -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function showDetails(recipeName) {
+    const recipe = recipes.find((r) => r.name === recipeName);
+    if (recipe) {
+        const urlParams = new URLSearchParams();
+        urlParams.set('name', recipe.name);
+        window.location.href = `details.html?${urlParams.toString()}`;
+    } else {
+        alert("Resep tidak ditemukan!");
+    }
+}
+    </script>
+</body>
+</html>
