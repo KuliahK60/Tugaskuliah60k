@@ -1,0 +1,126 @@
+/* Reset basic styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+/* Search box */
+#search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Recipe list */
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.recipe-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.recipe-card button {
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.recipe-card button:hover {
+    background: #388e3c;
+}
+/* Gaya gambar resep */
+.recipe-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.details-container {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.details-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.details-container button:hover {
+    background-color: #2980b9;
+}
+button {
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white; /* Warna teks putih */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Padding untuk memberi ruang di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Ubah cursor menjadi pointer saat hover */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
